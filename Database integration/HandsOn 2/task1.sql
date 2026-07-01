@@ -7,58 +7,58 @@
 
 -- Departments
 INSERT INTO departments (dept_name, head_of_dept, budget) VALUES
-('Computer Science', 'Dr. Ramesh Kumar', 850000.00),
-('Electronics', 'Dr. Priya Nair', 620000.00),
-('Mechanical', 'Dr. Suresh Iyer', 540000.00),
-('Civil', 'Dr. Ananya Sharma', 430000.00);
+('Information Technology', 'Dr. Karthik Raman', 900000.00),
+('Electrical Engineering', 'Dr. Divya Menon', 650000.00),
+('Automobile Engineering', 'Dr. Naveen Kumar', 560000.00),
+('Architecture', 'Dr. Shalini Rao', 470000.00);
 
 -- Students
 INSERT INTO students (first_name, last_name, email, date_of_birth, department_id, enrollment_year) VALUES
-('Arjun', 'Mehta', 'arjun.mehta@college.edu', '2003-04-12', 1, 2022),
-('Priya', 'Suresh', 'priya.suresh@college.edu', '2003-07-25', 1, 2022),
-('Rohan', 'Verma', 'rohan.verma@college.edu', '2002-11-08', 2, 2021),
-('Sneha', 'Patel', 'sneha.patel@college.edu', '2004-01-30', 3, 2023),
-('Vikram', 'Das', 'vikram.das@college.edu', '2003-09-14', 1, 2022),
-('Kavya', 'Menon', 'kavya.menon@college.edu', '2002-05-17', 2, 2021),
-('Aditya', 'Singh', 'aditya.singh@college.edu', '2004-03-22', 4, 2023),
-('Deepika', 'Rao', 'deepika.rao@college.edu', '2003-08-09', 1, 2022);
+('Aakash', 'Nair', 'aakash.nair@college.edu', '2003-03-18', 1, 2022),
+('Meera', 'Krishnan', 'meera.krishnan@college.edu', '2003-08-11', 1, 2022),
+('Kiran', 'Reddy', 'kiran.reddy@college.edu', '2002-12-05', 2, 2021),
+('Pooja', 'Mishra', 'pooja.mishra@college.edu', '2004-02-14', 3, 2023),
+('Harish', 'Kumar', 'harish.kumar@college.edu', '2003-10-20', 1, 2022),
+('Anjali', 'Joshi', 'anjali.joshi@college.edu', '2002-06-28', 2, 2021),
+('Rahul', 'Chauhan', 'rahul.chauhan@college.edu', '2004-04-09', 4, 2023),
+('Keerthana', 'Iyer', 'keerthana.iyer@college.edu', '2003-09-01', 1, 2022);
 
 -- Courses
 INSERT INTO courses (course_name, course_code, credits, department_id) VALUES
-('Data Structures & Algorithms', 'CS101', 4, 1),
-('Database Management Systems', 'CS102', 3, 1),
-('Object Oriented Programming', 'CS103', 4, 1),
-('Circuit Theory', 'EC101', 3, 2),
-('Thermodynamics', 'ME101', 3, 3);
+('Programming Fundamentals', 'IT101', 4, 1),
+('Relational Database Systems', 'IT102', 3, 1),
+('Java Programming', 'IT103', 4, 1),
+('Electrical Machines', 'EE101', 3, 2),
+('Automotive Engineering Basics', 'AE101', 3, 3);
 
 -- Enrollments
 INSERT INTO enrollments (student_id, course_id, enrollment_date, grade) VALUES
-(1,1,'2022-07-01','A'),
-(1,2,'2022-07-01','B'),
-(2,1,'2022-07-01','B'),
-(2,3,'2022-07-01','A'),
-(3,4,'2021-07-01','A'),
-(4,5,'2023-07-01',NULL),
-(5,1,'2022-07-01','C'),
-(5,2,'2022-07-01','A'),
-(6,4,'2021-07-01','B'),
-(7,5,'2023-07-01',NULL),
-(8,1,'2022-07-01','A'),
-(8,3,'2022-07-01','B');
+(1,1,'2022-08-01','A'),
+(1,2,'2022-08-01','B'),
+(2,1,'2022-08-01','A'),
+(2,3,'2022-08-01','A'),
+(3,4,'2021-08-01','B'),
+(4,5,'2023-08-01',NULL),
+(5,1,'2022-08-01','C'),
+(5,2,'2022-08-01','A'),
+(6,4,'2021-08-01','B'),
+(7,5,'2023-08-01',NULL),
+(8,1,'2022-08-01','A'),
+(8,3,'2022-08-01','B');
 
 -- Professors
 INSERT INTO professors (prof_name, email, department_id, salary) VALUES
-('Dr. Anand Krishnan', 'anand.k@college.edu', 1, 95000.00),
-('Dr. Meena Pillai', 'meena.p@college.edu', 1, 88000.00),
-('Dr. Sunil Rajan', 'sunil.r@college.edu', 2, 82000.00),
-('Dr. Latha Gopal', 'latha.g@college.edu', 3, 79000.00),
-('Dr. Kartik Bose', 'kartik.b@college.edu', 4, 76000.00);
+('Dr. Raghav Srinivasan', 'raghav.s@college.edu', 1, 98000.00),
+('Dr. Lakshmi Narayan', 'lakshmi.n@college.edu', 1, 90000.00),
+('Dr. Vinod Menon', 'vinod.m@college.edu', 2, 85000.00),
+('Dr. Preethi Raj', 'preethi.r@college.edu', 3, 81000.00),
+('Dr. Arvind Bhat', 'arvind.b@college.edu', 4, 78000.00);
 
 -- 16. Insert Two Additional Students
 INSERT INTO students (first_name, last_name, email, date_of_birth, department_id, enrollment_year)
 VALUES
-('Nithik', 'Venkat', 'nithik.venkat@college.edu', '2004-06-15', 1, 2023),
-('Rahul', 'Sharma', 'rahul.sharma@college.edu', '2003-12-10', 2, 2022);
+('Vignesh', 'Raj', 'vignesh.raj@college.edu', '2004-07-21', 1, 2023),
+('Sanjana', 'Patil', 'sanjana.patil@college.edu', '2003-11-16', 2, 2022);
 
 -- 17. Update Grade
 UPDATE enrollments
